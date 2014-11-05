@@ -1,0 +1,1068 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+body{
+    background-image: url(../img/bg_pattern.png);
+    background-repeat: repeat;
+}
+
+.bg-top{
+    position: fixed;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 89px;
+    background-image: url(../img/bg_top.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+    z-index: 101;
+    pointer-events: none;
+}
+
+.bg-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 89px;
+    background-image: url(../img/bg_bottom.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.hero {
+    /*width: 845px;*/
+    width: 100%;
+    height: 734px;
+    position: relative;
+    margin-top: 120px;
+}
+
+.hero .krr {
+    width: 845px;
+    height: 734px;
+    position: absolute;
+    bottom: 0;
+    left:30px;
+    background-image: url(../img/krr.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    z-index: 60;
+}
+
+.hero .daifuku{
+    position: absolute;
+}
+.daifuku.one{
+    left: 113px;
+    top: -64px;
+    width: 196px;
+    height: 120px;
+    background-image: url(../img/daifuku1.png);
+    z-index: 59;
+}
+.daifuku.two{
+    left: 0px;
+    top : 400px;
+    width: 88px;
+    height: 112px;
+    background-image: url(../img/daifuku2.png);
+}
+.daifuku.three{
+    left: 68px;
+    top: 580px;
+    width: 164px;
+    height: 132px;
+    background-image: url(../img/daifuku3.png);
+    z-index: 61;
+}
+
+.hero .logo-a {
+    width: 500px;
+    height: 147px;
+    background-image: url(../img/logo_a.png);
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    z-index: 70;
+}
+
+.hero .logo-b {
+    width: 356px;
+    height: 78px;
+    background-image: url(../img/logo_b.png);
+    position: absolute;
+    top: 350px;
+    left: 55%;
+    z-index: 71;
+}
+
+.bg-stars{
+    position: absolute;
+    pointer-events : none;
+}
+
+.bg-stars .star{
+    position: absolute;
+    font-size: 40px;
+}
+
+.kyu, .ichigo{
+    height: 500px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-top: 100px;
+}
+
+.kyu .cd{
+    position: absolute;
+    left : 500px;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 0 30px rgba(236, 46, 122, 0.6);
+    -webkit-perspective: 1500px;
+    -moz-perspective: 1500px;
+    -ms-perspective: 1500px;
+    perspective: 1500px;
+    z-index: 55;
+}
+
+.kyu .text{
+    z-index: 54;
+}
+
+.kyu .cd div{
+    background-size: cover;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+
+    -webkit-transition : transform 2s, -webkit-filter 2s;
+    -moz-transition : transform 2s, -moz-filter 2s;
+    -ms-transition : transform 2s, -ms-filter 2s;
+    transition : transform 2s, -webkit-filter 2s, moz-filter 2s, -ms-filter 2s;
+
+    -webkit-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.kyu .cd .cover{
+    background-image: url(../img/kyu.png);
+    z-index: 51;
+    -webkit-transform : rotateY(-30deg);
+    -moz-transform : rotateY(-30deg);
+    -ms-transform : rotateY(-30deg);
+    transform : rotateY(-30deg);
+    box-shadow: 0 0 30px rgba(236, 46, 122, 0.6);
+}
+.kyu .cd:hover .cover{
+    -webkit-transform : rotateY(-180deg);
+    -webkit-filter: brightness(0.5);
+    
+    -moz-transform : rotateY(-180deg);
+    -moz-filter: brightness(0.5);
+    
+    -ms-transform : rotateY(-180deg);
+    -ms-filter: brightness(0.5);
+    
+    transform : rotateY(-180deg);
+    filter: brightness(0.5);
+}
+
+.kyu .cd .coverback{
+    background-image: url(../img/kyu-coverback.png);
+    -webkit-transform : translateX(-400px) rotateY(150deg);
+    -webkit-transform-origin: 100% 50%;
+    -webkit-filter: brightness(0.5);
+
+    -moz-transform : translateX(-400px) rotateY(150deg);
+    -moz-transform-origin: 100% 50%;
+    -moz-filter: brightness(0.5);
+
+    -ms-transform : translateX(-400px) rotateY(150deg);
+    -ms-transform-origin: 100% 50%;
+    -ms-filter: brightness(0.5);
+
+    transform : translateX(-400px) rotateY(150deg);
+    transform-origin: 100% 50%;
+    filter: brightness(0.5);
+    box-shadow: 0 0 30px rgba(236, 46, 122, 0.6);
+}
+
+.kyu .cd:hover .coverback{
+    -webkit-transform : translateX(-400px) rotateY(0deg);
+    -webkit-filter: brightness(1);
+
+    -moz-transform : translateX(-400px) rotateY(0deg);
+    -moz-filter: brightness(1);
+
+    -ms-transform : translateX(-400px) rotateY(0deg);
+    -ms-filter: brightness(1);
+
+    transform : translateX(-400px) rotateY(0deg);
+    filter: brightness(1);
+}
+
+.kyu .cd .disk{
+    background-image: url(../img/kyu-cd.png);
+    z-index: 50;
+    -webkit-transform : rotateZ(-30deg);
+    -webkit-transform-origin: 50% 50%;
+    -webkit-filter: brightness(0.5);
+
+    -moz-transform : rotateZ(-30deg);
+    -moz-transform-origin: 50% 50%;
+    -moz-filter: brightness(0.5);
+
+    -ms-transform : rotateZ(-30deg);
+    -ms-transform-origin: 50% 50%;
+    -ms-filter: brightness(0.5);
+
+    transform : rotateZ(-30deg);
+    transform-origin: 50% 50%;
+    filter: brightness(0.5);
+}
+
+.kyu .cd:hover .disk{
+    -webkit-transform : rotateZ(0deg);
+    -webkit-filter: brightness(1);
+
+    -moz-transform : rotateZ(0deg);
+    -moz-filter: brightness(1);
+
+    -ms-transform : rotateZ(0deg);
+    -ms-filter: brightness(1);
+
+    transform : rotateZ(0deg);
+    filter: brightness(1);
+}
+
+.kyu .cd .diskback{
+    background-image: url(../img/kyu-inside.png);
+    z-index: 49;
+    -webkit-filter: brightness(0.5);
+    -moz-filter: brightness(0.5);
+    -ms-filter: brightness(0.5);
+    filter: brightness(0.5);
+}
+.kyu .cd:hover .diskback{
+    -webkit-filter: brightness(1);
+    -moz-filter: brightness(1);
+    -ms-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.kyu .cover a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    background: rgba(0,0,0,0.2);
+    opacity: 0;
+    transition : opacity 0.2s;
+    background-image : url(../img/play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kyu .cover a:hover{
+    opacity: 1;
+}
+
+.kyu .text{
+    position: absolute;
+    top: 0;
+    color: rgb(245, 46, 94);
+    text-shadow: 0 0 20px rgba(236, 46, 122, 0.6);
+}
+
+.kyu .text h1{
+    font-size: 5em;
+}
+.kyu .text .caption{
+    font-size: 20px;
+    margin-top: -2.5em;
+}
+.kyu .text ul{
+    list-style: decimal;
+}
+
+.ichigo .cd{
+    position: absolute;
+    left : 0px;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 0 30px rgba(236, 46, 122, 0.6);
+    -webkit-perspective: 1500px;
+    -moz-perspective: 1500px;
+    -ms-perspective: 1500px;
+    perspective: 1500px;
+    z-index: 65;
+}
+.ichigo .cd div{
+    background-size: cover;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+
+    -webkit-transition : transform 2s, -webkit-filter 2s;
+    -moz-transition : transform 2s, -moz-filter 2s;
+    -ms-transition : transform 2s, -ms-filter 2s;
+    transition : transform 2s, -webkit-filter 2s, moz-filter 2s, -ms-filter 2s;
+
+    -webkit-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.ichigo .cd .cover{
+    background-image: url(../img/ichigo.png);
+    z-index: 51;
+    -webkit-transform : rotateY(-30deg);
+    -moz-transform : rotateY(-30deg);
+    -ms-transform : rotateY(-30deg);
+    transform : rotateY(-30deg);
+    box-shadow: 0 0 30px rgba(236, 46, 122, 0.6);
+}
+.ichigo .cd:hover .cover{
+    -webkit-transform : rotateY(-180deg);
+    -webkit-filter: brightness(0.5);
+    
+    -moz-transform : rotateY(-180deg);
+    -moz-filter: brightness(0.5);
+    
+    -ms-transform : rotateY(-180deg);
+    -ms-filter: brightness(0.5);
+    
+    transform : rotateY(-180deg);
+    filter: brightness(0.5);
+}
+
+.ichigo .cd .coverback{
+    background-color: white;
+    -webkit-transform : translateX(-400px) rotateY(150deg);
+    -webkit-transform-origin: 100% 50%;
+    -webkit-filter: brightness(0.5);
+
+    -moz-transform : translateX(-400px) rotateY(150deg);
+    -moz-transform-origin: 100% 50%;
+    -moz-filter: brightness(0.5);
+
+    -ms-transform : translateX(-400px) rotateY(150deg);
+    -ms-transform-origin: 100% 50%;
+    -ms-filter: brightness(0.5);
+
+    transform : translateX(-400px) rotateY(150deg);
+    transform-origin: 100% 50%;
+    filter: brightness(0.5);
+    box-shadow: 0 0 30px rgba(236, 46, 122, 0.6);
+}
+
+.ichigo .cd:hover .coverback{
+    -webkit-transform : translateX(-400px) rotateY(0deg);
+    -webkit-filter: brightness(1);
+
+    -moz-transform : translateX(-400px) rotateY(0deg);
+    -moz-filter: brightness(1);
+
+    -ms-transform : translateX(-400px) rotateY(0deg);
+    -ms-filter: brightness(1);
+
+    transform : translateX(-400px) rotateY(0deg);
+    filter: brightness(1);
+}
+
+.ichigo .cd .disk{
+    background-image: url(../img/ichigo-cd.png);
+    background-color: white;
+    z-index: 50;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-filter: brightness(0.5);
+
+    -moz-transform-origin: 50% 50%;
+    -moz-filter: brightness(0.5);
+
+    -ms-transform-origin: 50% 50%;
+    -ms-filter: brightness(0.5);
+
+    transform-origin: 50% 50%;
+    filter: brightness(0.5);
+}
+
+.ichigo .cd:hover .disk{
+    -webkit-filter: brightness(1);
+
+    -moz-filter: brightness(1);
+
+    -ms-filter: brightness(1);
+
+    filter: brightness(1);
+}
+
+
+.ichigo .text{
+    position: absolute;
+    top: 0;
+    color: rgb(245, 46, 94);
+    text-shadow: 0 0 20px rgba(236, 46, 122, 0.6);
+    left: 500px;
+}
+
+.ichigo .text h1{
+    font-size: 4em;
+}
+.ichigo .text .caption{
+    font-size: 30px;
+    width: 300px;
+}
+
+.strap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.strap .img{
+    background-image: url(../img/strap.png);
+    width: 341px;
+    height: 399px;
+    display: inline-block;
+}
+
+.accessories{
+    width: 100%;
+    max-width: 1200px;
+    margin : 0 auto;
+    position: relative;
+}
+
+.accessories .card, .accessories .uchiwa, .accessories .memo{
+    float:left;
+    width: 33%;
+    text-align: center;
+    transition : transform 1s;
+    position: relative;
+}
+
+.accessories .card{
+    z-index:39;
+}
+
+.accessories .uchiwa{
+    z-index:41;
+    perspective: 1000px;
+}
+
+.accessories .memo{
+    z-index: 40;
+}
+
+.accessories.prepare .card{
+    transform : translateX(100%);
+}
+
+.accessories.prepare .uchiwa{
+    transform : scale(0.8);
+}
+
+.accessories.prepare .memo{
+    transform : translateX(-100%);
+}
+
+.accessories .card .img{
+    width : 300px;
+    height : 185px;
+    background-image: url(../img/card-thumb.png);
+    transform : rotate(-15deg);
+    margin-top: 150px;
+    display : inline-block;
+}
+
+.accessories .uchiwa .img {
+    width: 401px;
+    height: 478px;
+    display : inline-block;
+    transition : transform 1s;
+    backface-visibility: hidden;
+}
+
+.accessories .uchiwa .img.front {
+    background-image: url(../img/uchiwa1.png);
+}
+
+.accessories .uchiwa .img.back {
+    background-image: url(../img/uchiwa2.png);
+    transform : rotateY(180deg);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.accessories .uchiwa:hover .img.front,
+.accessories.prepare .uchiwa .img.front {
+    transform : rotateY(-180deg);
+}
+
+.accessories .uchiwa:hover .img.back,
+.accessories.prepare .uchiwa .img.back {
+    transform : rotateY(0deg);
+}
+
+.accessories .memo .img {
+    width: 300px;
+    height: 164px;
+    background-image: url(../img/memo-thumb.png);
+    margin-top : 150px;
+    transform : rotate(15deg);
+    display : inline-block;
+}
+
+.accessories h1{
+    font-size: 30px;
+    color: rgb(245, 46, 94);
+}
+
+.social {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+a.price, p.price, span.price {
+    background-color : #ffc055;
+    border-radius: 3px;
+    border: solid 1px #e8904f;
+    font-size: 12px;
+    display: inline;
+    padding: 3px 10px;
+    color: white;
+}
+
+.crossfade {
+    background-color : #ff8fa8;
+    border-radius: 3px;
+    border: solid 1px rgba(0,0,0,0.1);
+    font-size: 12px;
+    display: inline;
+    padding: 3px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.purchase table{
+    margin: 30px auto 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 #999;
+}
+
+.purchase table tr:first-child td:first-child {
+    -moz-border-radius-topleft:20px;
+    -webkit-border-top-left-radius:20px;
+    border-top-left-radius:20px;
+}
+
+.purchase table tr:first-child td:last-child {
+    -moz-border-radius-topright:20px;
+    -webkit-border-top-right-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.purchase table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft:20px;
+    -webkit-border-bottom-left-radius:20px;
+    border-bottom-left-radius:20px;
+}
+
+.purchase table tr:last-child td:last-child {
+    -moz-border-radius-bottomright:20px;
+    -webkit-border-bottom-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.purchase tr.header td{
+    background-image: -o-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
+    background-image: -moz-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
+    background-image: -webkit-linear-gradient(-90deg, #FFDA4E 0%, #FFCC00 100%);
+    background-image: -ms-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
+    background-image: linear-gradient(-180deg, #FFD737 0%, #FF9A2C 100%);
+    color: white;
+    text-align: center;
+    height: 60px;
+    font-size: 25px;
+    text-shadow: 0 -1px #000;
+    overflow: hidden;
+}
+
+.purchase .products, .purchase .omake, .purchase .price{
+    background: white;
+    text-align: center;
+}
+
+.purchase .products, .purchase .omake{
+    border-right: solid 1px #FF9A2C;
+}
+
+.purchase .products{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.purchase .products img{
+    margin-right: 20px;
+    margin-top: 20px;
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+}
+
+.purchase .products .product,
+.purchase .omake .product{
+    display: inline-block;
+}
+
+.purchase .single .product img{
+    display: block;
+}
+
+.purchase .products .product span,
+.purchase .omake .product span{
+    color: #F76D6D;
+}
+
+.purchase .omake{
+    padding: 20px;
+}
+
+.purchase .price{
+    font-size: 35px;
+    color: #FF9A2C;
+    padding: 20px;
+}
+
+.purchase .price .transmit{
+    font-size: 20px;
+    color: #999;
+}
+
+.purchase-instruction{
+    margin: 0 auto;
+    max-width: 500px;
+    background: white;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.purchase-instruction h2{
+    text-align: center;
+}
+
+.purchase-form {
+    margin: 0 auto;
+    max-width: 500px;
+    background: white;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.purchase-form table{
+    width: 100%;
+}
+
+.purchase-form .choices{
+    width: 100%;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+}
+
+.purchase-form .choice{
+    width:50%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.purchase-form .choice:nth-child(2){
+    border-left: solid 1px #aaa;
+    margin-left: -1px;
+}
+
+.purchase-form td{
+    padding-top: 20px;
+}
+
+.purchase-form input[type=submit]{
+    width: 100%;
+    margin: 20px auto 0 auto;
+    height: 40px;
+    font-size: 15px;
+    background-image: -o-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
+    background-image: -moz-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
+    background-image: -webkit-linear-gradient(-90deg, #FFDA4E 0%, #FFCC00 100%);
+    background-image: -ms-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
+    background-image: linear-gradient(-180deg, #FFD737 0%, #FF9A2C 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 0 -1px #999;
+}
+
+.purchase-form .choice:hover{
+    background: rgb(255, 227, 153);
+}
+
+.purchase-form td:first-child{
+    text-align: right;
+}
+
+table.single .products img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+table.single .omake img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+@media (max-width: 999px) {
+    .hero .logo-a {
+        left : 20%;
+    }
+    .hero .logo-b {
+        left : 25%;
+    }
+}
+
+@media (max-width: 620px) {
+    .hero .logo-a {
+        left : 0%;
+    }
+    .hero .logo-b {
+        left : 0%;
+    }
+}
