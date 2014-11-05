@@ -10,6 +10,7 @@ $(document).on('scroll',function () {
 
 	$('.logo-a').css('transform','translateY('+ -scrollTop*0.7+'px');
 	$('.logo-b').css('transform','translateY('+ -scrollTop*0.5+'px');
+	$('.android-app').css('transform','translateY('+ -scrollTop*0.3+'px');
 
 	$('.star').each(function(){
 		var distance = $(this).data('distance');

@@ -401,6 +401,25 @@ body{
     z-index: 71;
 }
 
+.hero .android-app{
+    top: 450px;
+    left: 55%;
+    position: absolute;
+    z-index: 72;
+    width: 316px;
+    background: rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(245, 46, 94);
+}
+
+.hero .android-app img{
+    width: 100px;
+    height: 100px;
+
+}
+
 .bg-stars{
     position: absolute;
     pointer-events : none;
@@ -965,80 +984,6 @@ a.price, p.price, span.price {
     color: #999;
 }
 
-.purchase-instruction{
-    margin: 0 auto;
-    max-width: 500px;
-    background: white;
-    padding: 40px;
-    margin-top: 40px;
-    border-radius: 20px;
-}
-
-.purchase-instruction h2{
-    text-align: center;
-}
-
-.purchase-form {
-    margin: 0 auto;
-    max-width: 500px;
-    background: white;
-    padding: 40px;
-    margin-top: 40px;
-    border-radius: 20px;
-}
-
-.purchase-form table{
-    width: 100%;
-}
-
-.purchase-form .choices{
-    width: 100%;
-    border: solid 1px #aaa;
-    border-radius: 5px;
-}
-
-.purchase-form .choice{
-    width:50%;
-    height: 50px;
-    float: left;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-}
-
-.purchase-form .choice:nth-child(2){
-    border-left: solid 1px #aaa;
-    margin-left: -1px;
-}
-
-.purchase-form td{
-    padding-top: 20px;
-}
-
-.purchase-form input[type=submit]{
-    width: 100%;
-    margin: 20px auto 0 auto;
-    height: 40px;
-    font-size: 15px;
-    background-image: -o-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
-    background-image: -moz-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
-    background-image: -webkit-linear-gradient(-90deg, #FFDA4E 0%, #FFCC00 100%);
-    background-image: -ms-linear-gradient(-90deg, #FFDA4E 0%, #FF5900 100%);
-    background-image: linear-gradient(-180deg, #FFD737 0%, #FF9A2C 100%);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    text-shadow: 0 -1px #999;
-}
-
-.purchase-form .choice:hover{
-    background: rgb(255, 227, 153);
-}
-
-.purchase-form td:first-child{
-    text-align: right;
-}
-
 table.single .products img {
     max-width: 300px;
     max-height: 300px;
@@ -1053,7 +998,7 @@ table.single .omake img {
     .hero .logo-a {
         left : 20%;
     }
-    .hero .logo-b {
+    .hero .logo-b, .hero .android-app {
         left : 25%;
     }
 }
@@ -1062,7 +1007,7 @@ table.single .omake img {
     .hero .logo-a {
         left : 0%;
     }
-    .hero .logo-b {
+    .hero .logo-b, .hero .android-app {
         left : 0%;
     }
 }
